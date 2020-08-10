@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+</head>
+<body>
+    hello
+</body>
+<script>
+    function func1(arayvalues) {
+        
+        
+    }
+function q1(values){
+    function func3(u,v){
+      if (math.random()>0.5){
+        var [x1,y1,z1]=func2(v);
+      u=u+2;
+      }else{
+  
+        var [x1,y1,z1]=func2(v);
+        u=u-2;
+      }
+      return math.abs(x1*u)+math.abs(y1+u)+math.abs(z1-u);
+    }
+
+    function func2(vx) {
+        let [[p,q],[r,s]]=vx;
+        return[p*s, q*r, p-r];        
+
+    }
+    return values.slice(1)
+    .map((v, i)=> [v, values[i]])
+    .reduce(func3,0);
+  }
+</script>
+</html>

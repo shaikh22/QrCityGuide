@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+*{
+	margin:0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+header{
+	background-image: url(../hp.jpg);
+	height: 25vh;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+ul{
+	float: right;
+	list-style-type:none;
+	
+
+}
+ul li{
+	display: inline-block;
+	
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 10px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+.logo img{
+	float: left;
+	width: 250px;
+	height:auto; 
+}
+
+.title{
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title b{
+	color: #fff;
+	font-size: 100px;
+	font-family: Adobe Arabic;	
+}
+b{
+	position: relative;
+	text-decoration: none;	
+   width: 400px;
+   height: 150px;
+   text-align: center;
+   line-height: 80px;
+   display: inline-block;
+   color: #262626;
+
+}
+b:before
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left:-2px;
+	width: 0;
+	height:0;
+	background:transparent;
+	border:5px solid transparent;
+}
+b:hover:before
+{
+	animation: animate 0.5s linear forwards;
+}
+@keyframes animate
+{
+0%
+{
+	width:0;
+	height:0;
+	border-top-color: #262626;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+}
+50%
+{
+	width:100%;
+	height:0;
+	border-top-color: #262626;
+	border-right-color: #262626;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+}
+100%
+{
+	width:100%;
+	height:100%;
+	border-top-color: #262626;
+	border-right-color: #262626;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+
+}
+}
+b:after
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left:-2px;
+	width: 0;
+	height:0;
+	background:transparent;
+	border:2px solid transparent;
+}
+b:hover:after
+{
+	animation: animate2 0.5s linear forwards;
+}
+@keyframes animate2
+{
+0%
+{
+	width:0;
+	height:0;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: #262626;
+}
+50%
+{
+	width:0;
+	height:100%;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: #262626;
+	border-left-color: #262626;
+}
+100%
+{
+	width:100%;
+	height:100%;
+	border-top-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:#262626; 
+	border-left-color: #262626;
+
+}
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins',sans-serif;
+}
+.dsp{
+	position: absolute;
+	top: 45%;
+	left: 78%;
+	transform: translate(-50%,-50%);
+}
+.dsp h2{
+	color: #fff;
+	font-size:70px;
+	font-family: Adobe Arabic;	
+}
+.inf{
+position: absolute;
+	top: 90%;
+	left: 63%;
+	transform: translate(-50%,-50%);
+}
+.inf h4{
+
+	color: #fff;
+	font-size: 25px;
+	font-family: Adobe Arabic;	
+}
+.inf p{
+	color: #fff;
+	font-size: 13px;
+	font-family:'Raleway', sans-serif;	
+}
+.button {
+	position: absolute;
+	top:92%;
+	left:28%;
+	transform: translate(-50%,-50%);
+
+}
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px ;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.btn:hover{
+	background-color: blue;
+	color: #000; 
+}
